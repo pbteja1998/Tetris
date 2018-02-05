@@ -9,10 +9,6 @@ n_cols = board.n_cols
 width = board.width
 height = board.height
 
-pygame.init()
-screen = board.screen
-background = board.background
-
 class GamePlay(block.Block,board.Board):
     def __init__(self,board):
         self.score = board.score
@@ -134,8 +130,14 @@ class GamePlay(block.Block,board.Board):
                 self.selec(figType,config,xCoor,yCoor)
                 self.board.display_blocks()
 
-board = board.get_object()
-block = block.Block(0,n_cols/2)
-board.display_blocks()
-game = GamePlay(board)
-game.pygame_events()
+if __name__ == "__main__":
+
+    board = board.get_object()
+    block = block.Block(0,n_cols/2)
+    board.display_blocks()
+    game = GamePlay(board)
+
+    pygame.init()
+    screen = board.screen
+    background = board.background
+    game.pygame_events()
