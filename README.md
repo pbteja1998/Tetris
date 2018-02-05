@@ -28,10 +28,10 @@ There are 4 modules in this code
 1. `figures.py` (all figures are defined in this module)
 
 ## Inheritance:
-1. class `Block inherited the following classes:
+1. class `Block` inherited the following classes:
   `Fig1`, `Fig2`, `Fig3`, `Fig4`, `Fig5`, `Fig6` from the `figures.py` module
 1. class `GamePlay` inherited the following classes:
   `Block`, `Board`
 
 ## Polymorphism:
-  Polymorphism is used in figures.py module
+  Polymorphism is used in `figures.py` module
