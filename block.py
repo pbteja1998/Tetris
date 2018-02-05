@@ -9,8 +9,7 @@ background = board.background
 
 class Block(figures.Fig1,figures.Fig2,figures.Fig3,figures.Fig4,figures.Fig5,figures.Fig6):
     def __init__(self,x,y):
-        figures.Fig1.__init__(self,x,y)
-        figures.Fig2.__init__(self,x,y)
+
         self.x = x
         self.y = y
         self.board = board.get_object()
